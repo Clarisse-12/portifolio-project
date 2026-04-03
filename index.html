@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clarisse Mukayiranga portfolio website.">
+  <meta name="keywords" content="portfolio, software engineer, web development, projects">
+  <meta name="author" content="Clarisse Mukayiranga">
+  <title>Clarisse Mukayiranga Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar" id="home">
+    <nav class="menu" aria-label="Main navigation">
+      <div class="menu-links" id="menu-links">
+        <a href="#home">Home</a>
+        <a href="#about">about me</a>
+        <a href="#projects">Project</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact me</a>
+      </div>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">&#9790;</button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-links" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" aria-label="Hero section">
+      <img class="hero-photo" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=320&q=70" alt="Clarisse profile image" loading="lazy">
+      <div class="hero-copy">
+        <h1>Hello, I am <span>Clarisse</span> Mukayiranga| software Engineer</h1>
+        <a href="#projects" class="btn btn-blue">View Projects</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2>About me</h2>
+      <div class="about-card split-card">
+        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=220&q=70" alt="About profile" loading="lazy">
+        <div>
+          <p>Software Engineering student at the African Leadership University with a background in industrial Electricity.</p>
+          <button class="btn btn-dark" type="button">Readmore</button>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <p>Key skills overview</p>
+        <ul>
+          <li>Frontend: HTML, CSS, JavaScript, React</li>
+          <li>Design: Figma, wireframing, usability testing</li>
+          <li>Professional: communication, teamwork, problem-solving</li>
+        </ul>
+        <a class="btn btn-dark" href="#" download>Download cv</a>
+      </div>
+
+      <h2>Mission</h2>
+      <div class="about-card">
+        <p>"To establish a technological college that helps youth and teenage mothers gain essential digital skills."</p>
+        <button class="btn btn-dark" type="button">Readmore</button>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Documents">
+      <h2>My document</h2>
+      <div class="about-card doc-card">
+        <p>Cv link:<a href="#">Here</a> <a class="btn btn-dark" href="#" download>Download cv</a></p>
+        <p>Deploma:<a href="#">Here</a> <a class="btn btn-dark" href="#" download>Download dp</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>My Projects</h2>
+      <hr>
+      <div class="project-filters" id="project-filters">
+        <button class="chip active" data-filter="all" type="button">All</button>
+        <button class="chip" data-filter="frontend" type="button">Frontend</button>
+        <button class="chip" data-filter="fullstack" type="button">Fullstack</button>
+        <button class="chip" data-filter="uiux" type="button">UI/UX</button>
+      </div>
+      <div class="project-filters select-row">
+        <select id="tech-filter" aria-label="Filter projects by technology">
+          <option value="all">All tech</option>
+          <option value="javascript">JavaScript</option>
+          <option value="react">React</option>
+          <option value="figma">Figma</option>
+          <option value="node">Node</option>
+        </select>
+        <select id="role-filter" aria-label="Filter projects by role">
+          <option value="all">All roles</option>
+          <option value="developer">Developer</option>
+          <option value="designer">Designer</option>
+        </select>
+      </div>
+
+      <div class="project-grid" id="project-grid">
+        <article class="project-card" data-category="frontend" data-role="developer" data-tech="html css javascript react">
+          <img class="details-trigger" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=70" alt="Project one" loading="lazy">
+          <div class="project-links"><a href="#">Github</a><a href="#">Live</a></div>
+        </article>
+        <article class="project-card" data-category="uiux" data-role="designer" data-tech="figma ux research">
+          <img class="details-trigger" src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=70" alt="Project two" loading="lazy">
+          <div class="project-links"><a href="#">Github</a><a href="#">Live</a></div>
+        </article>
+        <article class="project-card" data-category="fullstack" data-role="developer" data-tech="javascript node express">
+          <img class="details-trigger" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=70" alt="Project three" loading="lazy">
+          <div class="project-links"><a href="#">Github</a><a href="#">Live</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+
+      <h3>Soft skills</h3>
+      <div class="about-card purple-card">
+        <p>Problem solving Team collaboration CommunicationTime management Adaptability</p>
+      </div>
+
+      <h3>Technical skills</h3>
+      <div class="about-card tech-card">
+        <div class="skill-row"><span>HTML/CSS</span><div class="line"><div style="--level: 86%"></div></div></div>
+        <div class="skill-row"><span>JavaScript</span><div class="line"><div style="--level: 78%"></div></div></div>
+        <div class="skill-row"><span>React</span><div class="line"><div style="--level: 52%"></div></div></div>
+        <div class="skill-row"><span>UI/UX design</span><div class="line"><div style="--level: 92%"></div></div></div>
+      </div>
+
+      <h3>Interest</h3>
+      <div class="about-card interest-card">
+        <p>Digital design & creativity Technology & innovationLearning new tools and trends EntrepreneurshipCommunity impact projects</p>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <h2>Experience & Education</h2>
+      <div class="timeline-box">
+        <article>
+          <h4>African Leadership University</h4>
+          <p>Software Engineering Student | 2023 - Present</p>
+        </article>
+        <article>
+          <h4>community empowerment Tech Projects</h4>
+          <p>Volunteer Developer | 2023 - Present</p>
+        </article>
+        <article>
+          <h4>Industrial Electricity Background</h4>
+          <p>Technical Studies | 2019 - 2022</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="blog">
+      <h2>Blogs</h2>
+      <div class="project-filters" id="blog-filters">
+        <button class="chip active" data-blog="all" type="button">All</button>
+        <button class="chip" data-blog="coding" type="button">Coding</button>
+        <button class="chip" data-blog="career" type="button">Career</button>
+        <button class="chip" data-blog="design" type="button">Design</button>
+      </div>
+
+      <div class="blog-grid" id="blog-grid">
+        <article class="blog-card" data-category="coding">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=70" alt="Coding blog" loading="lazy">
+          <div>
+            <p>Coding</p>
+            <h4>How I Structure Small JavaScript Projects</h4>
+            <button class="btn btn-dark post-trigger" type="button">Read post</button>
+          </div>
+          <template>
+            <h2>How I Structure Small JavaScript Projects</h2>
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=70" alt="Post image" loading="lazy">
+            <p>I use clear folder separation and reusable components for maintainable code.</p>
+            <pre><code>function setupProject() {
+  const folders = ["assets", "components", "pages"];
+  return folders;
+}</code></pre>
+          </template>
+        </article>
+
+        <article class="blog-card" data-category="career">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=70" alt="Career blog" loading="lazy">
+          <div>
+            <p>Career</p>
+            <h4>From Student to Builder:</h4>
+            <button class="btn btn-dark post-trigger" type="button">Read post</button>
+          </div>
+          <template>
+            <h2>From Student to Builder</h2>
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=70" alt="Post image" loading="lazy">
+            <p>My portfolio improved when I started describing impact and not only tasks.</p>
+            <pre><code>const post = {
+  focus: "impact",
+  include: ["context", "solution", "results"]
+};</code></pre>
+          </template>
+        </article>
+
+        <article class="blog-card" data-category="design">
+          <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=900&q=70" alt="Design blog" loading="lazy">
+          <div>
+            <p>Design</p>
+            <h4>Designing Clarity in Community.</h4>
+            <button class="btn btn-dark post-trigger" type="button">Read post</button>
+          </div>
+          <template>
+            <h2>Designing Clarity in Community</h2>
+            <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=900&q=70" alt="Post image" loading="lazy">
+            <p>Simple language and visual hierarchy help first-time users trust digital tools.</p>
+            <pre><code>const designRules = [
+  "clear labels",
+  "consistent spacing",
+  "readable typography"
+];</code></pre>
+          </template>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact me</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">name:</label>
+        <input type="text" id="name" name="name" required>
+        <small class="error" id="name-error"></small>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <small class="error" id="email-error"></small>
+
+        <label for="message">message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <small class="error" id="message-error"></small>
+
+        <button type="submit" class="btn btn-dark submit-btn">submit</button>
+        <p id="form-success" aria-live="polite"></p>
+      </form>
+
+      <div class="socials">
+        <p>Social medias:</p>
+        <a href="#" aria-label="facebook">f</a>
+        <a href="#" aria-label="instagram">i</a>
+        <a href="#" aria-label="tiktok">t</a>
+        <a href="#" aria-label="x">x</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>©2026Copyright All Right Reserved</p>
+  </footer>
+
+  <dialog id="project-modal" class="modal">
+    <article>
+      <h2 id="modal-title">Project details</h2>
+      <p id="modal-text">Project description.</p>
+      <button type="button" id="close-project-modal" class="btn btn-dark">Close</button>
+    </article>
+  </dialog>
+
+  <dialog id="post-modal" class="modal">
+    <article>
+      <div id="post-content"></div>
+      <section class="comment-box">
+        <h3>Comments</h3>
+        <form id="comment-form">
+          <input type="text" id="comment-name" placeholder="Your name" required>
+          <textarea id="comment-text" rows="3" placeholder="Write a comment" required></textarea>
+          <button class="btn btn-dark" type="submit">Post comment</button>
+        </form>
+        <ul id="comment-list"></ul>
+      </section>
+      <button type="button" id="close-post-modal" class="btn btn-dark">Close</button>
+    </article>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
