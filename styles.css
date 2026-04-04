@@ -14,8 +14,8 @@ body.dark {
   --surface: #232636;
   --ink: #eef0ff;
   --muted: #cfd4ff;
-  --panel: #515797;
-  --panel-strong: #4f3ca0;
+  --panel: #2b313e;
+  --panel-strong: #364055;
   --line: #6d8bff;
   --dark-btn: #101625;
 }
@@ -26,6 +26,11 @@ body.dark {
 
 html {
   scroll-behavior: smooth;
+}
+
+.page-top {
+  display: block;
+  height: 0;
 }
 
 body {
@@ -84,6 +89,11 @@ p {
   z-index: 30;
 }
 
+body.dark .topbar {
+  background: #151b29;
+  border-bottom-color: #2a3448;
+}
+
 .menu {
   width: min(960px, 96vw);
   margin: 0 auto;
@@ -112,6 +122,14 @@ p {
 .menu a {
   text-decoration: none;
   font-size: clamp(0.9rem, 1.7vw, 1.08rem);
+}
+
+body.dark .menu a {
+  color: #e8eeff;
+}
+
+body.dark .menu a:hover {
+  color: #b9caff;
 }
 
 .menu-toggle {
@@ -158,9 +176,9 @@ body.dark .menu-toggle span {
 }
 
 body.dark .theme-toggle {
-  background: #f2f4ff;
-  color: #1b2040;
-  border-color: #a1add7;
+  background: #2a3448;
+  color: #e8eeff;
+  border-color: #3d4b66;
 }
 
 .section {
@@ -216,6 +234,11 @@ body.dark .theme-toggle {
   border-radius: 16px;
   padding: 14px;
   margin-bottom: 14px;
+}
+
+body.dark .about-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
 }
 
 .split-card {
@@ -340,6 +363,18 @@ select {
   background: #6341cb;
 }
 
+body.dark .purple-card {
+  background: #32445c;
+}
+
+body.dark .tech-card {
+  background: #2f3d52;
+}
+
+body.dark .interest-card {
+  background: #3a3553;
+}
+
 .timeline-box {
   background: var(--panel);
   border-radius: 14px;
@@ -409,6 +444,11 @@ body.dark .timeline-box p {
   background: #9690db;
   border-radius: 22px;
   padding: 14px;
+}
+
+body.dark #contact form {
+  background: #2d3548;
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 label {
@@ -576,6 +616,11 @@ footer {
   font-size: clamp(0.95rem, 1.7vw, 1.1rem);
 }
 
+body.dark footer {
+  background: #121723;
+  border-top-color: #2b3448;
+}
+
 .modal {
   border: none;
   border-radius: 12px;
@@ -652,6 +697,11 @@ pre {
     z-index: 50;
   }
 
+  body.dark .menu-links {
+    background: #1e2637;
+    border-color: #33405a;
+  }
+
   .menu-links.open {
     display: flex;
   }
@@ -664,6 +714,10 @@ pre {
 
   .menu-links a:hover {
     background: #d8def6;
+  }
+
+  body.dark .menu-links a:hover {
+    background: #2e3a52;
   }
 
   .theme-toggle {
