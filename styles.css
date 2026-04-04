@@ -449,28 +449,123 @@ textarea {
   color: #0f6a1d;
 }
 
+.quick-contact {
+  background: var(--surface);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin: 14px 0 10px;
+}
+
+.quick-contact h3 {
+  margin: 0 0 8px;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+}
+
+.quick-contact p {
+  margin: 6px 0;
+  word-break: break-word;
+}
+
+.quick-contact a {
+  color: #123ea8;
+  font-weight: 600;
+}
+
+body.dark .quick-contact {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+body.dark .quick-contact a {
+  color: #9fc3ff;
+}
+
 .socials {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   margin: 22px 0;
+  flex-wrap: wrap;
 }
 
 .socials p {
   margin: 0;
   font-size: clamp(1rem, 1.9vw, 1.2rem);
+  min-width: 110px;
 }
 
-.socials a {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #767676;
-  text-decoration: none;
+.social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-transform: uppercase;
-  font-size: 1.1rem;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border-radius: 50%;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.12);
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
+.social-link.facebook {
+  background: #1877f2;
+}
+
+.social-link.instagram {
+  background: linear-gradient(135deg, #f58529 0%, #dd2a7b 55%, #8134af 100%);
+}
+
+.social-link.tiktok {
+  background: #111111;
+}
+
+.social-link.twitter {
+  background: #1d9bf0;
+}
+
+.facebook-icon {
+  background-image: url('https://cdn.simpleicons.org/facebook/FFFFFF');
+}
+
+.instagram-icon {
+  background-image: url('https://cdn.simpleicons.org/instagram/FFFFFF');
+}
+
+.tiktok-icon {
+  background-image: url('https://cdn.simpleicons.org/tiktok/FFFFFF');
+}
+
+.twitter-icon {
+  background-image: url('https://cdn.simpleicons.org/x/FFFFFF');
+}
+
+body.dark .social-link {
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.28);
+}
+
+.social-link:focus-visible {
+  outline: 2px solid var(--line);
+  outline-offset: 3px;
 }
 
 footer {
@@ -624,6 +719,16 @@ pre {
   .socials {
     flex-wrap: wrap;
     gap: 8px;
+  }
+
+  .socials p {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .social-link {
+    width: 48px;
+    justify-content: center;
   }
 }
 

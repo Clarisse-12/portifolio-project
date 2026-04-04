@@ -87,21 +87,8 @@
         <button class="chip active" data-filter="all" type="button">All</button>
         <button class="chip" data-filter="frontend" type="button">Frontend</button>
         <button class="chip" data-filter="fullstack" type="button">Fullstack</button>
-        <button class="chip" data-filter="uiux" type="button">UI/UX</button>
       </div>
-      <div class="project-filters select-row">
-        <select id="tech-filter" aria-label="Filter projects by technology">
-          <option value="all">All tech</option>
-          <option value="javascript">JavaScript</option>
-          <option value="react">React</option>
-          <option value="figma">Figma</option>
-          <option value="node">Node</option>
-        </select>
-        <select id="role-filter" aria-label="Filter projects by role">
-          <option value="all">All roles</option>
-          <option value="developer">Developer</option>
-          <option value="designer">Designer</option>
-        </select>
+
       </div>
 
       <div class="project-grid" id="project-grid">
@@ -109,7 +96,7 @@
           <img class="details-trigger" src="images/image3.png" alt="Frontend project interface on a laptop screen" loading="lazy">
           <div class="project-links"><a href="https://github.com/Clarisse-12/Job-Finder-App">Github</a><a href="https://job-finder-app-q36h.onrender.com/">Live</a></div>
         </article>
-        <article class="project-card" data-category="uiux" data-role="designer" data-tech="figma ux research">
+        <article class="project-card" data-category="frontend" data-role="designer" data-tech="figma ux research">
           <img class="details-trigger" src="images/image5.png" alt="UI and UX wireframes on a design workspace" loading="lazy">
           <div class="project-links"><a href="https://github.com/Clarisse-12/taste_of_africa">Github</a><a href="https://taste-of-africa.onrender.com/">Live</a></div>
         </article>
@@ -171,57 +158,45 @@
 
       <div class="blog-grid" id="blog-grid">
         <article class="blog-card" data-category="coding">
-          <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=1200&q=80" alt="Developer writing JavaScript code" loading="lazy">
+          <img src="images/image6.png" alt="Developer writing JavaScript code" loading="lazy">
           <div>
             <p>Coding</p>
-            <h4>How I Structure Small JavaScript Projects</h4>
+            <h4>Building a Simple Habit Tracker in Vanilla JavaScript</h4>
             <button class="btn btn-dark post-trigger" type="button">Read post</button>
           </div>
           <template>
-            <h2>How I Structure Small JavaScript Projects</h2>
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Code architecture and project planning on a desk" loading="lazy">
-            <p>I use clear folder separation and reusable components for maintainable code.</p>
-            <pre><code>function setupProject() {
-  const folders = ["assets", "components", "pages"];
-  return folders;
-}</code></pre>
+            <h2>Building a Simple Habit Tracker in Vanilla JavaScript</h2>
+            <img src="images/image6.png" alt="Code architecture and project planning on a desk" loading="lazy">
+            <p>This sample post explains how to plan a small habit tracker, split the UI into reusable parts, and keep the data flow easy to follow.</p>
           </template>
         </article>
 
         <article class="blog-card" data-category="career">
-          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="Students collaborating in a professional workshop" loading="lazy">
+          <img src="images/image7.png" alt="Students collaborating in a professional workshop" loading="lazy">
           <div>
             <p>Career</p>
-            <h4>From Student to Builder:</h4>
+            <h4>Three Lessons I Learned from My First Portfolio Draft</h4>
             <button class="btn btn-dark post-trigger" type="button">Read post</button>
           </div>
           <template>
-            <h2>From Student to Builder</h2>
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="Career growth and planning session" loading="lazy">
-            <p>My portfolio improved when I started describing impact and not only tasks.</p>
-            <pre><code>const post = {
-  focus: "impact",
-  include: ["context", "solution", "results"]
-};</code></pre>
+            <h2>Three Lessons I Learned from My First Portfolio Draft</h2>
+            <img src="images/image7.png" alt="Career growth and planning session" loading="lazy">
+            <p>This sample story shares how clearer project descriptions, better spacing, and stronger calls to action made the portfolio feel more confident.</p>
+
           </template>
         </article>
 
         <article class="blog-card" data-category="design">
-          <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1200&q=80" alt="Designer sketching product interface ideas" loading="lazy">
+          <img src="images/image8.png" alt="Designer sketching product interface ideas" loading="lazy">
           <div>
             <p>Design</p>
-            <h4>Designing Clarity in Community.</h4>
+            <h4>Designing a Friendly Dashboard for First-Time Users</h4>
             <button class="btn btn-dark post-trigger" type="button">Read post</button>
           </div>
           <template>
-            <h2>Designing Clarity in Community</h2>
-            <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80" alt="Community-focused interface design board" loading="lazy">
-            <p>Simple language and visual hierarchy help first-time users trust digital tools.</p>
-            <pre><code>const designRules = [
-  "clear labels",
-  "consistent spacing",
-  "readable typography"
-];</code></pre>
+            <h2>Designing a Friendly Dashboard for First-Time Users</h2>
+            <img src="images/image8.png" alt="Community-focused interface design board" loading="lazy">
+            <p>This fake blog post looks at how simple labels, soft contrast, and clear hierarchy can make a dashboard easier to trust and use.</p>
           </template>
         </article>
       </div>
@@ -246,12 +221,30 @@
         <p id="form-success" aria-live="polite"></p>
       </form>
 
+      <div class="quick-contact" aria-label="Get in touch details">
+        <h3>Get in touch</h3>
+        <p>always ready to work with you</p>
+
+        
+        <p>Email: <a href="mailto:clarissemukayiranga7@gmail.com">clarissemukayiranga7@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mukayiranga-clarisse-16a223395/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mukayiranga-clarisse-16a223395/</a></p>
+        <p>GitHub: <a href="https://github.com/Clarisse-12" target="_blank" rel="noopener noreferrer">github.com/Clarisse-12</a></p>
+      </div>
+
       <div class="socials">
         <p>Social medias:</p>
-        <a href="#" aria-label="facebook">f</a>
-        <a href="#" aria-label="instagram">i</a>
-        <a href="#" aria-label="tiktok">t</a>
-        <a href="#" aria-label="x">x</a>
+        <a class="social-link facebook" href="https://www.facebook.com/share/1Gw7BCX2sg/" target="_blank" rel="noopener noreferrer" aria-label="Open Facebook profile" title="Open Facebook profile">
+          <span class="social-icon facebook-icon" aria-hidden="true"></span>
+        </a>
+        <a class="social-link instagram" href="https://www.instagram.com/clarisseoreo/" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram profile" title="Open Instagram profile">
+          <span class="social-icon instagram-icon" aria-hidden="true"></span>
+        </a>
+        <a class="social-link tiktok" href="https://www.tiktok.com/@clarisseoreo" target="_blank" rel="noopener noreferrer" aria-label="Open TikTok profile" title="Open TikTok profile">
+          <span class="social-icon tiktok-icon" aria-hidden="true"></span>
+        </a>
+        <a class="social-link twitter" href="https://x.com/clarissemuk" target="_blank" rel="noopener noreferrer" aria-label="Open Twitter profile" title="Open Twitter profile">
+          <span class="social-icon twitter-icon" aria-hidden="true"></span>
+        </a>
       </div>
     </section>
   </main>
