@@ -32,7 +32,7 @@
 
   <main>
     <section class="hero section" aria-label="Hero section">
-      <img class="hero-photo" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=320&q=70" alt="Clarisse profile image" loading="lazy">
+      <img class="hero-photo" src="images/image1.jpeg" alt="Portrait of Clarisse Mukayiranga" loading="lazy">
       <div class="hero-copy">
         <h1>Hello, I am <span>Clarisse</span> Mukayiranga| software Engineer</h1>
         <a href="#projects" class="btn btn-blue">View Projects</a>
@@ -42,10 +42,13 @@
     <section class="section" id="about">
       <h2>About me</h2>
       <div class="about-card split-card">
-        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=220&q=70" alt="About profile" loading="lazy">
+        <img src="images/image2.png" alt="Clarisse during a learning session" loading="lazy">
         <div>
-          <p>Software Engineering student at the African Leadership University with a background in industrial Electricity.</p>
-          <button class="btn btn-dark" type="button">Readmore</button>
+          <p>
+            Software Engineering student at African Leadership University.
+            <span class="more-text" hidden> I have a background in Industrial Electricity and I am passionate about empowering youth and teenage mothers with digital skills to unlock jobs, online services, and new opportunities. I bring strong time management, teamwork, and adaptability in projects.</span>
+          </p>
+          <button class="btn btn-dark readmore-toggle" type="button" aria-expanded="false">Read more</button>
         </div>
       </div>
 
@@ -56,20 +59,23 @@
           <li>Design: Figma, wireframing, usability testing</li>
           <li>Professional: communication, teamwork, problem-solving</li>
         </ul>
-        <a class="btn btn-dark" href="#" download>Download cv</a>
+        <a class="btn btn-dark" href="document/cv%20Clarisse%20Mukayiranga%20(1).pdf" download="Clarisse-Mukayiranga-CV.pdf">Download cv</a>
       </div>
 
       <h2>Mission</h2>
       <div class="about-card">
-        <p>"To establish a technological college that helps youth and teenage mothers gain essential digital skills."</p>
-        <button class="btn btn-dark" type="button">Readmore</button>
+        <p>
+          To build a technology college for youth and teenage mothers.
+          <span class="more-text" hidden> The goal is to help them gain practical digital skills, access online services, improve their lives, and open doors for education, employment, and personal growth.</span>
+        </p>
+        <button class="btn btn-dark readmore-toggle" type="button" aria-expanded="false">Read more</button>
       </div>
     </section>
 
     <section class="section" aria-label="Documents">
       <h2>My document</h2>
       <div class="about-card doc-card">
-        <p>Cv link:<a href="#">Here</a> <a class="btn btn-dark" href="#" download>Download cv</a></p>
+        <p>Cv link:<a href="document/cv%20Clarisse%20Mukayiranga%20(1).pdf">Here</a> <a class="btn btn-dark" href="document/cv%20Clarisse%20Mukayiranga%20(1).pdf" download="Clarisse-Mukayiranga-CV.pdf">Download cv</a></p>
         <p>Deploma:<a href="#">Here</a> <a class="btn btn-dark" href="#" download>Download dp</a></p>
       </div>
     </section>
@@ -100,15 +106,15 @@
 
       <div class="project-grid" id="project-grid">
         <article class="project-card" data-category="frontend" data-role="developer" data-tech="html css javascript react">
-          <img class="details-trigger" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=70" alt="Project one" loading="lazy">
+          <img class="details-trigger" src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&w=1200&q=80" alt="Frontend project interface on a laptop screen" loading="lazy">
           <div class="project-links"><a href="#">Github</a><a href="#">Live</a></div>
         </article>
         <article class="project-card" data-category="uiux" data-role="designer" data-tech="figma ux research">
-          <img class="details-trigger" src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=70" alt="Project two" loading="lazy">
+          <img class="details-trigger" src="https://images.unsplash.com/photo-1586717799252-bd134ad00e26?auto=format&fit=crop&w=1200&q=80" alt="UI and UX wireframes on a design workspace" loading="lazy">
           <div class="project-links"><a href="#">Github</a><a href="#">Live</a></div>
         </article>
         <article class="project-card" data-category="fullstack" data-role="developer" data-tech="javascript node express">
-          <img class="details-trigger" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=70" alt="Project three" loading="lazy">
+          <img class="details-trigger" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" alt="Fullstack development setup with multiple screens" loading="lazy">
           <div class="project-links"><a href="#">Github</a><a href="#">Live</a></div>
         </article>
       </div>
@@ -165,7 +171,7 @@
 
       <div class="blog-grid" id="blog-grid">
         <article class="blog-card" data-category="coding">
-          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=70" alt="Coding blog" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=1200&q=80" alt="Developer writing JavaScript code" loading="lazy">
           <div>
             <p>Coding</p>
             <h4>How I Structure Small JavaScript Projects</h4>
@@ -173,7 +179,7 @@
           </div>
           <template>
             <h2>How I Structure Small JavaScript Projects</h2>
-            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=70" alt="Post image" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Code architecture and project planning on a desk" loading="lazy">
             <p>I use clear folder separation and reusable components for maintainable code.</p>
             <pre><code>function setupProject() {
   const folders = ["assets", "components", "pages"];
@@ -183,7 +189,7 @@
         </article>
 
         <article class="blog-card" data-category="career">
-          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=70" alt="Career blog" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="Students collaborating in a professional workshop" loading="lazy">
           <div>
             <p>Career</p>
             <h4>From Student to Builder:</h4>
@@ -191,7 +197,7 @@
           </div>
           <template>
             <h2>From Student to Builder</h2>
-            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=70" alt="Post image" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="Career growth and planning session" loading="lazy">
             <p>My portfolio improved when I started describing impact and not only tasks.</p>
             <pre><code>const post = {
   focus: "impact",
@@ -201,7 +207,7 @@
         </article>
 
         <article class="blog-card" data-category="design">
-          <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=900&q=70" alt="Design blog" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1200&q=80" alt="Designer sketching product interface ideas" loading="lazy">
           <div>
             <p>Design</p>
             <h4>Designing Clarity in Community.</h4>
@@ -209,7 +215,7 @@
           </div>
           <template>
             <h2>Designing Clarity in Community</h2>
-            <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=900&q=70" alt="Post image" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80" alt="Community-focused interface design board" loading="lazy">
             <p>Simple language and visual hierarchy help first-time users trust digital tools.</p>
             <pre><code>const designRules = [
   "clear labels",

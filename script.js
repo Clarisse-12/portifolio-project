@@ -29,6 +29,7 @@ const commentForm = document.querySelector('#comment-form');
 const commentName = document.querySelector('#comment-name');
 const commentText = document.querySelector('#comment-text');
 const commentList = document.querySelector('#comment-list');
+const readMoreButtons = document.querySelectorAll('.readmore-toggle');
 
 if (localStorage.getItem('theme') === 'dark') {
   body.classList.add('dark');
@@ -183,4 +184,17 @@ commentForm?.addEventListener('submit', (event) => {
   commentList.prepend(listItem);
 
   commentForm.reset();
+});
+
+readMoreButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const card = button.closest('.about-card');
+    const moreText = card?.querySelector('.more-text');
+    if (!moreText) return;
+
+    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+    moreText.hidden = isExpanded;
+    button.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+    button.textContent = isExpanded ? 'Read more' : 'Show less';
+  });
 });
