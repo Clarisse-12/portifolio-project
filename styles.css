@@ -583,6 +583,10 @@ body.dark .timeline-box p {
   margin: 8px 0 10px;
 }
 
+.watch-btn {
+  padding-inline: 14px;
+}
+
 #contact form {
   background: #eef2ff;
   border-radius: 22px;
@@ -786,6 +790,10 @@ body.dark footer {
 #post-content img {
   width: 100%;
   margin-bottom: 10px;
+}
+
+#post-content .watch-btn {
+  margin-top: 8px;
 }
 
 pre {

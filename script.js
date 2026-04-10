@@ -120,6 +120,17 @@ postTriggers.forEach((button) => {
   });
 });
 
+postContent?.addEventListener('click', (event) => {
+  const watchLink = event.target.closest('.watch-btn');
+  if (!watchLink) return;
+
+  event.preventDefault();
+  event.stopPropagation();
+  const href = watchLink.getAttribute('href');
+  if (!href || href === '#') return;
+  window.open(href, '_blank', 'noopener,noreferrer');
+});
+
 closePostModal?.addEventListener('click', () => postModal.close());
 
 projectModal?.addEventListener('click', (event) => {
