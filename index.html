@@ -35,50 +35,53 @@
     <section class="hero section" aria-label="Hero section">
       <img class="hero-photo" src="images/image1.jpeg" alt="Portrait of Clarisse Mukayiranga" loading="lazy">
       <div class="hero-copy">
-        <h1>Hello, I am <span>Clarisse</span> Mukayiranga| software Engineer</h1>
+        <h1>Hello, I am <span>Clarisse Mukayiranga</span></h1>
+        <p class="hero-subtitle">Software Engineer focused on building impactful digital solutions for communities.</p>
         <a href="#projects" class="btn btn-blue">View Projects</a>
       </div>
     </section>
 
     <section class="section" id="about">
       <h2>About me</h2>
-      <div class="about-card split-card">
-        <img src="images/image2.png" alt="Clarisse during a learning session" loading="lazy">
-        <div>
-          <p>
-            Software Engineering student at African Leadership University.
-            <span class="more-text" hidden> I have a background in Industrial Electricity and I am passionate about empowering youth and teenage mothers with digital skills to unlock jobs, online services, and new opportunities. I bring strong time management, teamwork, and adaptability in projects.</span>
-          </p>
-          <button class="btn btn-dark readmore-toggle" type="button" aria-expanded="false">Read more</button>
+      <div class="about-layout">
+        <div class="about-intro">
+          <div class="about-photo-shell">
+            <img class="about-side-photo" src="images/image2.png" alt="Clarisse during a learning session" loading="lazy">
+          </div>
+          <div class="about-card about-intro-card">
+            <p>I am Clarisse Mukayiranga, a Software Engineer. I build practical web solutions using HTML, CSS, JavaScript, and React,etc and I care deeply about creating technology that solves real community problems. My long-term mission is to empower youth and teenage mothers through digital skills, helping them access opportunities in education, employment, and online services.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="about-card">
-        <p>Key skills overview</p>
-        <ul>
-          <li>Frontend: HTML, CSS, JavaScript, React</li>
-          <li>Design: Figma, wireframing, usability testing</li>
-          <li>Professional: communication, teamwork, problem-solving</li>
-        </ul>
-        <a class="btn btn-dark" href="document/cv%20Clarisse%20Mukayiranga%20(1).pdf" download="Clarisse-Mukayiranga-CV.pdf">Download cv</a>
-      </div>
-
-      <h2>Mission</h2>
-      <div class="about-card">
-        <p>
-          To build a technology college for youth and teenage mothers.
-          <span class="more-text" hidden> The goal is to help them gain practical digital skills, access online services, improve their lives, and open doors for education, employment, and personal growth.</span>
-        </p>
-        <button class="btn btn-dark readmore-toggle" type="button" aria-expanded="false">Read more</button>
+        <div class="about-card key-skills-card">
+          <h3>Key skills overview</h3>
+          <ul>
+            <li>Frontend: HTML, CSS, JavaScript, React, responsive design</li>
+            <li>Backend: Node.js, Express.js, API integration basics</li>
+            <li>Design: Figma, wireframing, usability testing, UI/UX principles</li>
+            <li>Tools: Git, GitHub, deployment workflows (Render)</li>
+            <li>Professional: communication, teamwork, problem-solving, adaptability</li>
+          </ul>
+          <a class="btn btn-dark" href="document/cv%20Clarisse%20Mukayiranga%20(1).pdf" download="Clarisse-Mukayiranga-CV.pdf">Download cv</a>
+        </div>
       </div>
     </section>
 
-    <section class="section" aria-label="Documents">
-      <h2>My document</h2>
-      <div class="about-card doc-card">
-        <p>Cv link:<a href="document/cv%20Clarisse%20Mukayiranga%20(1).pdf">Here</a> <a class="btn btn-dark" href="document/cv%20Clarisse%20Mukayiranga%20(1).pdf" download="Clarisse-Mukayiranga-CV.pdf">Download cv</a></p>
-        <p>Deploma:<a href="#">Here</a> <a class="btn btn-dark" href="#" download>Download dp</a></p>
-      </div>
+    <section class="section mission-docs" aria-label="Mission and documents">
+      <article class="mission-doc-item">
+        <h2>Mission</h2>
+        <div class="about-card mission-card">
+          <p>To build a technology college for youth and teenage mothers. The goal is to help them gain practical digital skills, access online services, improve their lives, and open doors for education, employment, and personal growth.</p>
+        </div>
+      </article>
+
+      <article class="mission-doc-item" aria-label="Documents">
+        <h2>My document</h2>
+        <div class="about-card doc-card">
+          <p>Cv link:<a href="document/cv%20Clarisse%20Mukayiranga%20(1).pdf">Here</a> <a class="btn btn-dark" href="document/cv%20Clarisse%20Mukayiranga%20(1).pdf" download="Clarisse-Mukayiranga-CV.pdf">Download cv</a></p>
+          <p>Deploma:<a href="#">Here</a> <a class="btn btn-dark" href="#" download>Download dp</a></p>
+        </div>
+      </article>
     </section>
 
     <section class="section" id="projects">
@@ -111,22 +114,55 @@
     <section class="section" id="skills">
       <h2>Skills</h2>
 
-      <h3>Soft skills</h3>
-      <div class="about-card purple-card">
-        <p>Problem solving Team collaboration CommunicationTime management Adaptability</p>
-      </div>
+      <div class="skills-grid">
+        <article class="skills-item">
+          <h3>Soft skills</h3>
+          <div class="about-card purple-card">
+            <ul>
+              <li>Problem solving</li>
+              <li>Team collaboration</li>
+              <li>Communication</li>
+              <li>Time management</li>
+              <li>Adaptability</li>
+              <li>Leadership</li>
+              <li>Creativity</li>
+              <li>Empathy and user-centered thinking</li>
+              <li>Initiative and self-learning</li>
+            </ul>
+          </div>
+        </article>
 
-      <h3>Technical skills</h3>
-      <div class="about-card tech-card">
-        <div class="skill-row"><span>HTML/CSS</span><div class="line"><div style="--level: 86%"></div></div></div>
-        <div class="skill-row"><span>JavaScript</span><div class="line"><div style="--level: 78%"></div></div></div>
-        <div class="skill-row"><span>React</span><div class="line"><div style="--level: 52%"></div></div></div>
-        <div class="skill-row"><span>UI/UX design</span><div class="line"><div style="--level: 92%"></div></div></div>
-      </div>
+        <article class="skills-item">
+          <h3>Technical skills</h3>
+          <div class="about-card tech-card">
+            <div class="skill-row"><span>HTML/CSS</span><div class="line"><div style="--level: 86%"></div></div></div>
+            <div class="skill-row"><span>JavaScript</span><div class="line"><div style="--level: 78%"></div></div></div>
+            <div class="skill-row"><span>React</span><div class="line"><div style="--level: 52%"></div></div></div>
+            <div class="skill-row"><span>Flutter</span><div class="line"><div style="--level: 55%"></div></div></div>
+            <div class="skill-row"><span>Node.js</span><div class="line"><div style="--level: 64%"></div></div></div>
+            <div class="skill-row"><span>Express.js</span><div class="line"><div style="--level: 60%"></div></div></div>
+            <div class="skill-row"><span>Git/GitHub</span><div class="line"><div style="--level: 74%"></div></div></div>
+            <div class="skill-row"><span>Figma</span><div class="line"><div style="--level: 80%"></div></div></div>
+            <div class="skill-row"><span>UI/UX design</span><div class="line"><div style="--level: 92%"></div></div></div>
+          </div>
+        </article>
 
-      <h3>Interest</h3>
-      <div class="about-card interest-card">
-        <p>Digital design & creativity Technology & innovationLearning new tools and trends EntrepreneurshipCommunity impact projects</p>
+        <article class="skills-item">
+          <h3>Interest</h3>
+          <div class="about-card interest-card">
+            <ul>
+              <li>Digital design and creativity</li>
+              <li>Technology and innovation</li>
+              <li>Learning new tools and trends</li>
+              <li>Entrepreneurship</li>
+              <li>Community impact projects</li>
+              <li>Mobile app development with Flutter</li>
+              <li>Web application development</li>
+              <li>EdTech and digital skills training</li>
+              <li>Youth and women empowerment through technology</li>
+            </ul>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -205,31 +241,31 @@
 
     <section class="section" id="contact">
       <h2>Contact me</h2>
-      <form id="contact-form" novalidate>
-        <label for="name">name:</label>
-        <input type="text" id="name" name="name" required>
-        <small class="error" id="name-error"></small>
+      <div class="contact-layout">
+        <form id="contact-form" novalidate>
+          <label for="name">name:</label>
+          <input type="text" id="name" name="name" required>
+          <small class="error" id="name-error"></small>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <small class="error" id="email-error"></small>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <small class="error" id="email-error"></small>
 
-        <label for="message">message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <small class="error" id="message-error"></small>
+          <label for="message">message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <small class="error" id="message-error"></small>
 
-        <button type="submit" class="btn btn-dark submit-btn">submit</button>
-        <p id="form-success" aria-live="polite"></p>
-      </form>
+          <button type="submit" class="btn btn-dark submit-btn">submit</button>
+          <p id="form-success" aria-live="polite"></p>
+        </form>
 
-      <div class="quick-contact" aria-label="Get in touch details">
-        <h3>Get in touch</h3>
-        <p>always ready to work with you</p>
-
-        
-        <p>Email: <a href="mailto:clarissemukayiranga7@gmail.com">clarissemukayiranga7@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mukayiranga-clarisse-16a223395/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mukayiranga-clarisse-16a223395/</a></p>
-        <p>GitHub: <a href="https://github.com/Clarisse-12" target="_blank" rel="noopener noreferrer">github.com/Clarisse-12</a></p>
+        <div class="quick-contact" aria-label="Get in touch details">
+          <h3>Get in touch</h3>
+          <p>always ready to work with you</p>
+          <p>Email: <a href="mailto:clarissemukayiranga7@gmail.com">clarissemukayiranga7@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/mukayiranga-clarisse-16a223395/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mukayiranga-clarisse-16a223395/</a></p>
+          <p>GitHub: <a href="https://github.com/Clarisse-12" target="_blank" rel="noopener noreferrer">github.com/Clarisse-12</a></p>
+        </div>
       </div>
 
       <div class="socials">
